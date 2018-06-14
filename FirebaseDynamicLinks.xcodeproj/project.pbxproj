@@ -30,6 +30,7 @@
 		A4885F3120D27C850024403A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4885F3420D27C850024403A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4885F3620D27C850024403A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4AB1F1620D294A900B13532 /* FirebaseDynamicLinks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseDynamicLinks.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 		A4885F2620D27C850024403A /* FirebaseDynamicLinks */ = {
 			isa = PBXGroup;
 			children = (
+				A4AB1F1620D294A900B13532 /* FirebaseDynamicLinks.entitlements */,
 				A4885F2720D27C850024403A /* AppDelegate.swift */,
 				A4885F2920D27C850024403A /* ViewController.swift */,
 				A4885F2B20D27C850024403A /* Main.storyboard */,
@@ -128,6 +130,11 @@
 				TargetAttributes = {
 					A4885F2320D27C850024403A = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
